@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/app.css">
         <title>BikeTribe | Cycling meetups & groups</title>
     </head>
-    <body style="background-color: #4a4b55">
-       <div>
-            Hello
-       </div>
+    <body>
+       {{ $slot }}
     </body>
 </html>
