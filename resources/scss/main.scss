@@ -1,9 +1,12 @@
 @use 'navbar';
+@use 'searchbar';
 
 :root {
     font-size: 16px;
+    letter-spacing: 3px;
     scroll-behavior: smooth;
-    --background-grey: #4a4b55;
+    --background-grey: #4d4954;
+    --accent-grey: #9188a0;
     --font-light: #fff;
 }
 
@@ -19,7 +22,7 @@ html {
 }
 
 body {
-    height: 100%;
+    height: 100vh;
     background-color: var(--background-grey);
     color: var(--font-light);
 }

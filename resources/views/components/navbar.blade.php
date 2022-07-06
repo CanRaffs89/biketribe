@@ -10,8 +10,8 @@
     </label>
     <div class="nav-container">
         <ul>
-            <li><a href="/portfolio" class="navlink">Register</a></li>
-            <li><a href="/about" class="navlink">Login</a></li>
+            <li><a href="/register" class="navlink">Register</a></li>
+            <li><a href="/login" class="navlink">Login</a></li>
         </ul>
     </div>
 </nav>
