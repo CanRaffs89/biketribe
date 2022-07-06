@@ -1,0 +1,26 @@
+@use 'navbar';
+
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    --background-grey: #4a4b55;
+    --font-light: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    height: 100%;
+    background-color: var(--background-grey);
+    color: var(--font-light);
+}
+

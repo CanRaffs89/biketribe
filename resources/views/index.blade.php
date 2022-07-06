@@ -1,7 +1,7 @@
 <x-layout>
     <div>
         <x-navbar></x-navbar>
-        {{-- Find your tribe
-        <x-search></x-search> --}}
+        <h1>Find your tribe</h1>
+        <x-search></x-search>
     </div>
 </x-layout>
