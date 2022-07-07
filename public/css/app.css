@@ -2,7 +2,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 100px;
+  padding: 0 50px;
   width: 100%;
   height: 100px;
 }
@@ -25,11 +25,11 @@ nav {
 
 .navlink {
   text-decoration: none;
-  color: var(--font-light);
+  color: var(--white);
 }
 
 .navlink:hover {
-  color: var(--accent-grey);
+  color: var(--mid-grey);
 }
 
 nav ul li {
@@ -65,7 +65,7 @@ nav ul li a {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: var(--background-grey);
+    background: var(--dark-grey);
     opacity: 0;
     transition: all 0.2s ease;
   }
@@ -110,7 +110,7 @@ nav ul li a {
     display: block;
     width: 20px;
     height: 2px;
-    background: var(--font-light);
+    background: var(--white);
     margin-left: 14px;
   }
 
@@ -133,7 +133,7 @@ nav ul li a {
 }
 
 #nav:checked + .nav-btn i {
-  background: var(--font-light);
+  background: var(--white);
   transition: transform 0.2s ease;
 }
 
@@ -175,11 +175,15 @@ nav ul li a {
   font-size: 64px;
 }
 
-.search-container {
+form {
   width: 100%;
 }
-.search-container input {
-  width: 1000px;
+form .search-container {
+  display: flex;
+  flex-direction: column;
+}
+form .search-container input {
+  width: 100%;
   height: 50px;
   margin: 30px auto;
   font-size: 24px;
@@ -187,28 +191,58 @@ nav ul li a {
   font-weight: 300;
   padding: 0 10px;
 }
-.search-container .search-button-container {
+form .search-container .search-button-container {
   display: flex;
 }
-.search-container .search-button-container button {
+form .search-container .search-button-container button {
   height: 50px;
   width: 200px;
   background-color: transparent;
-  border: 3px solid var(--font-light);
-  color: var(--font-light);
+  border: 3px solid var(--white);
+  color: var(--white);
   margin: 0 auto;
   font-size: 28px;
   letter-spacing: 3px;
   cursor: pointer;
 }
 
+@media (max-width: 864px) {
+  .search-lg-centred h1 {
+    font-size: 48px;
+  }
+
+  form .search-container input {
+    height: 40px;
+    margin: 20px auto;
+    font-size: 18px;
+  }
+  form .search-container .search-button-container button {
+    height: 40px;
+    width: 180px;
+    font-size: 24px;
+  }
+}
+.card-container {
+  height: auto;
+  width: 100%;
+  padding: 20px 0;
+  overflow: auto;
+  white-space: nowrap;
+}
+.card-container .card {
+  background-color: var(--mid-grey);
+  width: 280px;
+  height: 350px;
+  display: inline-block;
+}
+
 :root {
   font-size: 16px;
   letter-spacing: 3px;
   scroll-behavior: smooth;
-  --background-grey: #4d4954;
-  --accent-grey: #9188a0;
-  --font-light: #fff;
+  --dark-grey: #4d4954;
+  --mid-grey: #9188a0;
+  --white: #fff;
 }
 
 * {
@@ -223,9 +257,27 @@ html {
 }
 
 body {
+  height: 100%;
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+
+.container {
   height: 100vh;
-  background-color: var(--background-grey);
-  color: var(--font-light);
+  margin: 0 150px;
+}
+
+.down-arrow {
+  margin: 0 auto;
+  height: 20px;
+  width: 20px;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 864px) {
+  .container {
+    margin: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

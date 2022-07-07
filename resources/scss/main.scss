@@ -1,13 +1,14 @@
 @use 'navbar';
 @use 'searchbar';
+@use 'card';
 
 :root {
     font-size: 16px;
     letter-spacing: 3px;
     scroll-behavior: smooth;
-    --background-grey: #4d4954;
-    --accent-grey: #9188a0;
-    --font-light: #fff;
+    --dark-grey: #4d4954;
+    --mid-grey: #9188a0;
+    --white: #fff;
 }
 
 * {
@@ -22,8 +23,26 @@ html {
 }
 
 body {
+    height: 100%;
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+.container {
     height: 100vh;
-    background-color: var(--background-grey);
-    color: var(--font-light);
+    margin: 0 150px;
+}
+
+.down-arrow {
+    margin: 0 auto;
+    height: 20px;
+    width: 20px;
+    transform: rotate(90deg);
+}
+
+@media (max-width: 864px) {
+    .container {
+        margin: 0 20px;
+    }
 }
 
