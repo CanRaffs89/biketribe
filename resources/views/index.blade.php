@@ -1,6 +1,6 @@
 <x-layout>
     <div class="background-img">
-        <div class="background-img-fade">
+        <div>
             <x-navbar></x-navbar>
             <div class="container">
                 <div class="search-lg-centred">
@@ -14,6 +14,12 @@
         </div>
     </div>
     <div class="container">
+        <div class="card-container">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
         <div class="card-container">
             <div class="card"></div>
             <div class="card"></div>
