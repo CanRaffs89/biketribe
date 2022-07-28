@@ -1,6 +1,6 @@
 <nav id="navbar">
     <div class="logo">
-        <a href="/">Biketribe</a>
+        <a href="/"></a>
     </div>
     <input type="checkbox" id="nav" class="hidden"/>
     <label for="nav" class="nav-btn">

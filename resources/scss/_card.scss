@@ -6,19 +6,38 @@
     white-space: nowrap;
 
     .card {
-        background-color: var(--mid-grey);
+        background-color: var(--dark-orange);
         width: 280px;
         height: 350px;
         display: inline-block;
+        color: var(--white);
+        text-decoration: none;
+
+        .inner-card {
+            padding: 15px;
+
+            .card-image {
+                height: 200px;
+                width: 100%;
+                margin-bottom: 10px;
+                background-color: var(--mid-orange);
+            }
+
+            .card-text {
+                margin: 10px 0;
+            }
+            
+            .card-time {
+                font-size: 16px;
+                font-weight: lighter;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+
+            .card-title {
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
     }
 }
-
-// @media (max-width: 864px) {
-//     .card-container {
-//         flex-direction: column;
-
-//         .card {
-//             width: 100%;
-//         }
-//     }
-// }

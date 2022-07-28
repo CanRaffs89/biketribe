@@ -14,9 +14,11 @@ nav {
   margin-right: auto;
 }
 
-.logo img {
-  max-width: 100%;
-  height: 100%;
+.logo a {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  background: url("/img/logo.svg") no-repeat center/contain;
 }
 
 .nav-container {
@@ -29,7 +31,7 @@ nav {
 }
 
 .navlink:hover {
-  color: var(--black);
+  color: var(--mid-orange);
 }
 
 nav ul li {
@@ -54,7 +56,11 @@ nav ul li a {
   }
 
   .logo {
-    width: 115px;
+    width: 120px;
+    height: 25px;
+  }
+
+  .logo a {
     height: 25px;
   }
 
@@ -205,10 +211,14 @@ form .search-container .search-button-container button {
   letter-spacing: 3px;
   cursor: pointer;
 }
+form .search-container .search-button-container button:hover {
+  color: var(--mid-orange);
+  border: 4px solid var(--mid-orange);
+}
 
 @media (max-width: 864px) {
   .search-lg-centred h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   form .search-container input {
@@ -230,10 +240,34 @@ form .search-container .search-button-container button {
   white-space: nowrap;
 }
 .card-container .card {
-  background-color: var(--mid-grey);
+  background-color: var(--dark-orange);
   width: 280px;
   height: 350px;
   display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+}
+.card-container .card .inner-card {
+  padding: 15px;
+}
+.card-container .card .inner-card .card-image {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: var(--mid-orange);
+}
+.card-container .card .inner-card .card-text {
+  margin: 10px 0;
+}
+.card-container .card .inner-card .card-time {
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.card-container .card .inner-card .card-title {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 :root {
@@ -241,8 +275,8 @@ form .search-container .search-button-container button {
   letter-spacing: 3px;
   scroll-behavior: smooth;
   --black: #000;
-  --dark-grey: #4d4954;
-  --mid-grey: #9188a0;
+  --dark-orange: #361b00;
+  --mid-orange: #a35300;
   --white: #fff;
 }
 
@@ -263,14 +297,8 @@ body {
   color: var(--white);
 }
 
-.background-img-fade {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
 .background-img {
-  background: url("/img/robert-bye-tG36rvCeqng-unsplash.jpg") no-repeat fixed top/150%;
+  background: url("/img/bike-background.svg") no-repeat fixed right/contain;
   height: 100vh;
 }
 
@@ -289,6 +317,11 @@ body {
 @media (max-width: 864px) {
   .container {
     margin: 0 20px;
+  }
+
+  .background-img {
+    background-position: center;
+    background-size: cover;
   }
 }
 

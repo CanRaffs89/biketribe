@@ -14,9 +14,11 @@ nav {
     margin-right: auto;
 }
 
-.logo img {
-    max-width: 100%;
-    height: 100%;
+.logo a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background: url('/img/logo.svg') no-repeat center/contain;
 }
 
 .nav-container {
@@ -29,7 +31,7 @@ nav {
 }
 
 .navlink:hover {
-    color: var(--black);
+    color: var(--mid-orange);
 }
 
 nav ul li {
@@ -54,8 +56,12 @@ nav ul li a {
     }
 
     .logo {
-        width: 115px;
+        width: 120px;
         height: 25px;
+    }
+
+    .logo a {
+        height: 25px; 
     }
 
     .nav-container {

@@ -42,6 +42,11 @@ form {
                 letter-spacing: 3px;
                 cursor: pointer;
             }
+
+            button:hover {
+                color: var(--mid-orange);
+                border: 4px solid var(--mid-orange);
+            }
         }
     }
 }
@@ -49,7 +54,7 @@ form {
 @media (max-width: 864px) {
     .search-lg-centred {
         h1 {
-            font-size: 48px;
+            font-size: 40px;
         }
     }
 
