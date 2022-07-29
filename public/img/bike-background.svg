@@ -7,24 +7,24 @@
         <g id="Hero-Image" transform="translate(-517.000000, 0.000000)">
             <g id="Group-2" transform="translate(530.000000, -11.000000)">
                 <g id="Group">
-                    <circle id="Oval" stroke="#A35300" stroke-width="25" cx="325" cy="717" r="325"></circle>
-                    <path d="M503.5,446.5 L598.5,164.5" id="Line" stroke="#A35300" stroke-width="30" stroke-linecap="round"></path>
-                    <path d="M914,185 L599,185" id="Line" stroke="#A35300" stroke-width="30" stroke-linecap="round"></path>
-                    <path d="M922,692 L558,305.5" id="Line" stroke="#A35300" stroke-width="30" stroke-linecap="round"></path>
-                    <path d="M501.117188,455.460938 C478.313168,530.668873 453.107439,587.899342 425.5,627.152344 C397.892561,666.405346 362.918603,694.739981 320.578125,712.15625" id="Path" stroke="#A35300" stroke-width="30"></path>
-                    <path d="M660.155626,285.699624 C675.517617,412.308861 658.671619,515.523525 609.617634,595.343616 C560.563648,675.163707 480.262882,733.272596 368.715335,769.670283" id="Path" stroke="#A35300" stroke-width="30" stroke-linecap="round" transform="translate(517.183138, 527.684954) rotate(-74.000000) translate(-517.183138, -527.684954) "></path>
-                    <circle id="Oval" fill="#A35300" cx="321" cy="712" r="20"></circle>
-                    <path d="M598.060547,166.34375 C614.478516,114.545573 625.082031,79.2610677 629.871094,60.4902344 C627.247396,52.4160156 615.623698,32.2526042 595,0" id="Path-2" stroke="#A35300" stroke-width="20" stroke-linecap="round"></path>
+                    <circle id="Oval" stroke="#00A3A0" stroke-width="25" cx="325" cy="717" r="325"></circle>
+                    <path d="M503.5,446.5 L598.5,164.5" id="Line" stroke="#00A3A0" stroke-width="30" stroke-linecap="round"></path>
+                    <path d="M914,185 L599,185" id="Line" stroke="#00A3A0" stroke-width="30" stroke-linecap="round"></path>
+                    <path d="M922,692 L558,305.5" id="Line" stroke="#00A3A0" stroke-width="30" stroke-linecap="round"></path>
+                    <path d="M501.117188,455.460938 C478.313168,530.668873 453.107439,587.899342 425.5,627.152344 C397.892561,666.405346 362.918603,694.739981 320.578125,712.15625" id="Path" stroke="#00A3A0" stroke-width="30"></path>
+                    <path d="M660.155626,285.699624 C675.517617,412.308861 658.671619,515.523525 609.617634,595.343616 C560.563648,675.163707 480.262882,733.272596 368.715335,769.670283" id="Path" stroke="#00A3A0" stroke-width="30" stroke-linecap="round" transform="translate(517.183138, 527.684954) rotate(-74.000000) translate(-517.183138, -527.684954) "></path>
+                    <circle id="Oval" fill="#00A3A0" cx="321" cy="712" r="20"></circle>
+                    <path d="M598.060547,166.34375 C614.478516,114.545573 625.082031,79.2610677 629.871094,60.4902344 C627.247396,52.4160156 615.623698,32.2526042 595,0" id="Path-2" stroke="#00A3A0" stroke-width="20" stroke-linecap="round"></path>
                 </g>
-                <g id="Group" opacity="0.319990809" transform="translate(23.000000, 0.000000)">
-                    <circle id="Oval" stroke="#A35300" stroke-width="25" cx="325" cy="717" r="325"></circle>
-                    <path d="M503.5,446.5 L598.5,164.5" id="Line" stroke="#A35300" stroke-width="30" stroke-linecap="round"></path>
-                    <path d="M914,185 L599,185" id="Line" stroke="#A35300" stroke-width="30" stroke-linecap="round"></path>
-                    <path d="M922,692 L558,305.5" id="Line" stroke="#A35300" stroke-width="30" stroke-linecap="round"></path>
-                    <path d="M501.117188,455.460938 C478.313168,530.668873 453.107439,587.899342 425.5,627.152344 C397.892561,666.405346 362.918603,694.739981 320.578125,712.15625" id="Path" stroke="#A35300" stroke-width="30"></path>
-                    <path d="M660.155626,285.699624 C675.517617,412.308861 658.671619,515.523525 609.617634,595.343616 C560.563648,675.163707 480.262882,733.272596 368.715335,769.670283" id="Path" stroke="#A35300" stroke-width="30" stroke-linecap="round" transform="translate(517.183138, 527.684954) rotate(-74.000000) translate(-517.183138, -527.684954) "></path>
-                    <circle id="Oval" fill="#A35300" cx="321" cy="712" r="20"></circle>
-                    <path d="M598.060547,166.34375 C614.478516,114.545573 625.082031,79.2610677 629.871094,60.4902344 C627.247396,52.4160156 615.623698,32.2526042 595,0" id="Path-2" stroke="#A35300" stroke-width="20" stroke-linecap="round"></path>
+                <g id="Group" opacity="0.322104779" transform="translate(23.000000, 0.000000)">
+                    <circle id="Oval" stroke="#00A3A0" stroke-width="25" cx="325" cy="717" r="325"></circle>
+                    <path d="M503.5,446.5 L598.5,164.5" id="Line" stroke="#00A3A0" stroke-width="30" stroke-linecap="round"></path>
+                    <path d="M914,185 L599,185" id="Line" stroke="#00A3A0" stroke-width="30" stroke-linecap="round"></path>
+                    <path d="M922,692 L558,305.5" id="Line" stroke="#00A3A0" stroke-width="30" stroke-linecap="round"></path>
+                    <path d="M501.117188,455.460938 C478.313168,530.668873 453.107439,587.899342 425.5,627.152344 C397.892561,666.405346 362.918603,694.739981 320.578125,712.15625" id="Path" stroke="#00A3A0" stroke-width="30"></path>
+                    <path d="M660.155626,285.699624 C675.517617,412.308861 658.671619,515.523525 609.617634,595.343616 C560.563648,675.163707 480.262882,733.272596 368.715335,769.670283" id="Path" stroke="#00A3A0" stroke-width="30" stroke-linecap="round" transform="translate(517.183138, 527.684954) rotate(-74.000000) translate(-517.183138, -527.684954) "></path>
+                    <circle id="Oval" fill="#00A3A0" cx="321" cy="712" r="20"></circle>
+                    <path d="M598.060547,166.34375 C614.478516,114.545573 625.082031,79.2610677 629.871094,60.4902344 C627.247396,52.4160156 615.623698,32.2526042 595,0" id="Path-2" stroke="#00A3A0" stroke-width="20" stroke-linecap="round"></path>
                 </g>
             </g>
         </g>
