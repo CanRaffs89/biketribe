@@ -1,0 +1,47 @@
+.meetup-details-container {
+    display: flex;
+    height: 100vh;
+    margin-top: 25px;
+
+    .meetup-details-first, .meetup-details-second {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .meetup-details-first {
+        width: 65%;
+        margin-right: 5%;
+
+        h1 {
+            font-weight: normal;
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+
+        .meetup-details-image {
+            height: 400px;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+    .meetup-details-second {
+        width: 30%;
+    }
+}
+
+@media (max-width: 864px) {
+    .meetup-details-container {
+        flex-direction: column;
+        
+        .meetup-details-first {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .meetup-details-second {
+            width: 100%;
+        }
+    }
+}

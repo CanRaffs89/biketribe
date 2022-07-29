@@ -1,4 +1,4 @@
-<a href="/" class="card">
+<a href="/meetups/show" class="card">
     <div class="inner-card">
         <div class="card-image"></div>
         <h2 class="card-text card-time">Sat 27 Aug - 4:00PM</h2>
