@@ -272,7 +272,6 @@ form .search-container .search-button-container button:hover {
 
 .meetup-details-container {
   display: flex;
-  height: 100vh;
   margin-top: 25px;
 }
 .meetup-details-container .meetup-details-first, .meetup-details-container .meetup-details-second {
@@ -297,6 +296,53 @@ form .search-container .search-button-container button:hover {
 .meetup-details-container .meetup-details-second {
   width: 30%;
 }
+.meetup-details-container .meetup-details-second .meetup-group-card {
+  display: flex;
+  padding: 10px;
+  border: 1px solid var(--mid-blue);
+}
+.meetup-details-container .meetup-details-second .meetup-group-card .meetup-details-group-img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid var(--mid-blue);
+  flex-shrink: 0;
+}
+.meetup-details-container .meetup-details-second .meetup-group-card .meetup-details-group {
+  display: flex;
+  flex-direction: column;
+}
+.meetup-details-container .meetup-details-second .meetup-group-card .meetup-details-group h4 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.meetup-details-container .meetup-details-second .meetup-group-card .meetup-details-group h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+.meetup-details-container .meetup-details-second .meetup-details-info {
+  list-style: none;
+  margin-top: 25px;
+}
+.meetup-details-container .meetup-details-second .meetup-details-info li {
+  margin: 25px 0;
+  font-size: 20px;
+}
+.meetup-details-container .meetup-details-second .meetup-details-info li .meetup-tags-list {
+  list-style: none;
+}
+.meetup-details-container .meetup-details-second .meetup-details-info li .meetup-tags-list .meetup-tag {
+  display: inline;
+  background: var(--mid-blue);
+  border-radius: 25px;
+  padding: 10px;
+}
+.meetup-details-container .meetup-details-second .meetup-details-info li .meetup-tags-list .meetup-tag a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: lighter;
+}
 
 @media (max-width: 864px) {
   .meetup-details-container {
@@ -306,8 +352,12 @@ form .search-container .search-button-container button:hover {
     width: 100%;
     margin-right: 0;
   }
+  .meetup-details-container .meetup-details-first .meetup-details-image {
+    height: 200px;
+  }
   .meetup-details-container .meetup-details-second {
     width: 100%;
+    order: -1;
   }
 }
 :root {
@@ -348,7 +398,7 @@ body {
 }
 
 .small-container {
-  height: 100vh;
+  height: calc(100vh - 125px);
   margin: 0 50px;
 }
 
