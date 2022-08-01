@@ -46,6 +46,7 @@
             .meetup-details-group {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
 
                 h4 {
                     font-size: 14px;
@@ -64,14 +65,14 @@
             margin-top: 25px;
 
             li {
-                margin: 25px 0;
+                margin-top: 25px;
                 font-size: 20px;
 
                 .meetup-tags-list {
                     list-style: none;
 
                     .meetup-tag {
-                        display: inline;
+                        display: inline-block;
                         background: var(--mid-blue);
                         border-radius: 25px;
                         padding: 10px;
@@ -95,6 +96,10 @@
         .meetup-details-first {
             width: 100%;
             margin-right: 0;
+
+            h1 {
+                margin-top: 25px;
+            }
 
             .meetup-details-image {
                 height: 200px;

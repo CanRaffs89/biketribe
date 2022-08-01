@@ -312,6 +312,7 @@ form .search-container .search-button-container button:hover {
 .meetup-details-container .meetup-details-second .meetup-group-card .meetup-details-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .meetup-details-container .meetup-details-second .meetup-group-card .meetup-details-group h4 {
   font-size: 14px;
@@ -326,14 +327,14 @@ form .search-container .search-button-container button:hover {
   margin-top: 25px;
 }
 .meetup-details-container .meetup-details-second .meetup-details-info li {
-  margin: 25px 0;
+  margin-top: 25px;
   font-size: 20px;
 }
 .meetup-details-container .meetup-details-second .meetup-details-info li .meetup-tags-list {
   list-style: none;
 }
 .meetup-details-container .meetup-details-second .meetup-details-info li .meetup-tags-list .meetup-tag {
-  display: inline;
+  display: inline-block;
   background: var(--mid-blue);
   border-radius: 25px;
   padding: 10px;
@@ -352,6 +353,9 @@ form .search-container .search-button-container button:hover {
     width: 100%;
     margin-right: 0;
   }
+  .meetup-details-container .meetup-details-first h1 {
+    margin-top: 25px;
+  }
   .meetup-details-container .meetup-details-first .meetup-details-image {
     height: 200px;
   }
@@ -364,7 +368,7 @@ form .search-container .search-button-container button:hover {
   font-size: 16px;
   letter-spacing: 3px;
   scroll-behavior: smooth;
-  --black: #000;
+  --black: #1b1b1b;
   --dark-blue: #003534;
   --mid-blue: #00A3A0;
   --white: #fff;
