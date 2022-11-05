@@ -236,16 +236,18 @@ form .search-container .search-button-container button:hover {
   height: auto;
   width: 100%;
   padding: 20px 0;
-  overflow: auto;
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .card-container .card {
   background-color: var(--dark-blue);
-  width: 280px;
-  height: 350px;
+  width: 30%;
+  height: 400px;
   display: inline-block;
   color: var(--white);
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .card-container .card .inner-card {
   padding: 15px;
@@ -270,6 +272,16 @@ form .search-container .search-button-container button:hover {
   font-weight: normal;
 }
 
+@media (max-width: 864px) {
+  .card-container {
+    flex-direction: column;
+    align-content: center;
+  }
+  .card-container .card {
+    width: 95%;
+    height: 350px;
+  }
+}
 .meetup-details-container {
   display: flex;
   margin-top: 25px;

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Meetup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'index');
-Route::view('/meetups/show', 'meetups/show');
+// Route::view('/', 'index');
+// Route::view('/meetups/show', 'meetups/show');
+Route::get('/', function () {
+    return view('index', [
+        'meetups' => Meetup::all()
+    ]);
+});
+
+Route::get('/meetups/show/{id}', function($id) {
+    return view('meetups/show', [
+        'meetup' => Meetup::find($id)
+    ]);
+});
