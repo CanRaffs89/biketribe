@@ -41,7 +41,7 @@
             </div>
             <div class="meetup-details-second">
                 <div class="meetup-group-card">
-                    <img src="" alt="" class="meetup-details-group-img">
+                    <img src="{{asset('img/user.png')}}" alt="" class="meetup-details-group-img">
                     <div class="meetup-details-group">
                         <h4>Hosted by</h4>
                         <h3>{{$meetup['host']}}</h3>
@@ -51,11 +51,7 @@
                     <li>{{$meetup['location']}}</li>
                     <li>Sat 27 Aug - 4:00PM</li> 
                     <li>
-                        <ul class="meetup-tags-list">
-                            <li class="meetup-tag"><a href="/">fixed</a></li>
-                            <li class="meetup-tag"><a href="/">london</a></li>
-                            <li class="meetup-tag"><a href="/">beginner</a></li>
-                        </ul>
+                        <x-meetup-tags :tagsCsv="$meetup->tags" />
                     </li>
                 </ul>
             </div>
