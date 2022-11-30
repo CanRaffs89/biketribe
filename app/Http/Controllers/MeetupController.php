@@ -9,7 +9,7 @@ class MeetupController extends Controller
 {
     public function index() {
         return view('index', [
-            'meetups' => Meetup::latest()->filter(request(['tag', 'search']))->get()
+            'meetups' => Meetup::latest()->filter(request(['search']))->get()
         ]);
     }
 

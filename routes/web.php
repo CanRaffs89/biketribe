@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::view('/', 'index');
-// Route::view('/meetups/show', 'meetups/show');
 Route::get('/', [MeetupController::class, 'index']);
 
 Route::get('/meetups/show/{meetup}', [MeetupController::class, 'show']);

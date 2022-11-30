@@ -10,9 +10,6 @@ class Meetup extends Model
     use HasFactory;
 
     public function scopeFilter($query, array $filters) {
-        if($filters['tag'] ?? false) {
-            $query->where('tags', 'like', '%' . request('tag') . '%');
-        }
         if($filters['search'] ?? false) {
             $query->where('name', 'like', '%' . request('search') . '%')
                 ->orWhere('host', 'like', '%' . request('search') . '%')
