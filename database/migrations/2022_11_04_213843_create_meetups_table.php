@@ -16,11 +16,10 @@ return new class extends Migration
         Schema::create('meetups', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('tags');
-            $table->string('host');
             $table->string('location');
             $table->string('date');
             $table->longText('description');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
