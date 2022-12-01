@@ -1,3 +1,4 @@
+{{-- SHOWs details for a single meetup --}}
 <x-layout>
     <x-navbar></x-navbar>
     <div class="small-container">

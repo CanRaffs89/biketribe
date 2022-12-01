@@ -1,3 +1,4 @@
+{{-- HOME - shows searchbar and latest meetups --}}
 <x-layout>
     <div class="background-img">
         <x-navbar></x-navbar>
