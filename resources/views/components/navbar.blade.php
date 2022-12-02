@@ -11,7 +11,7 @@
     <div class="nav-container">
         <ul>
             @auth
-            <li><a href="/profile/{{auth()->user()->username}}" class="navlink">Hello {{auth()->user()->username}}</a></li>
+            <li><a href="/profile/{{auth()->user()->username}}" class="navlink">My Profile</a></li>
             <form id="logout-form" action="{{ route('logout') }}" method="POST">
                 @csrf
                 <li><button id="logout-button" class="navlink">Logout</button></li>

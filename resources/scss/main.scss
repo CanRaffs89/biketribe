@@ -3,6 +3,7 @@
 @use 'card';
 @use 'meetup-details';
 @use 'forms';
+@use 'profile';
 
 :root {
     font-size: 16px;
@@ -53,6 +54,17 @@ body {
     transform: rotate(90deg);
 }
 
+.h1-lg {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.h1-sm {
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+}
+
 @media (max-width: 864px) {
     .container, .small-container {
         margin: 0 20px;
@@ -61,6 +73,14 @@ body {
     .background-img {
         background-position: center;
         background-size: cover;
+    }
+
+    .h1-lg {
+        font-size: 40px;
+    }
+
+    .h1-sm {
+        font-size: 32px;
     }
 }
 

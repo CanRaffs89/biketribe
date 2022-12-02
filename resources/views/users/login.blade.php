@@ -2,7 +2,7 @@
 <x-layout>
     <x-navbar></x-navbar>
     <div class="container">
-        <h1 class="form-heading">Login</h1>
+        <h1 class="h1-sm">Login</h1>
         <form class="common-form" action="/login" method="POST" id="login-form">
             @csrf
             <label for="login-user">Username</label>

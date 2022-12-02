@@ -4,11 +4,6 @@
     align-items: center;
     justify-content: center;
     height: 500px;
-
-    h1 {
-        font-weight: 400;
-        font-size: 64px;
-    }
 }
 
 form {
@@ -52,12 +47,6 @@ form {
 }
 
 @media (max-width: 864px) {
-    .search-lg-centred {
-        h1 {
-            font-size: 40px;
-        }
-    }
-
     form {
         .search-container {
             input {
