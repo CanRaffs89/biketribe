@@ -14,9 +14,12 @@
     </div>
     <div class="container">
         <div class="card-container">
-            @foreach($meetups as $meetup)
+            {{-- @foreach($meetups as $meetup)
                 <x-info-card :meetup="$meetup" />
-            @endforeach
+            @endforeach --}}
+            <x-info-card></x-info-card>
+            <x-info-card></x-info-card>
+            <x-info-card></x-info-card>
         </div>
     </div>
 </x-layout>
