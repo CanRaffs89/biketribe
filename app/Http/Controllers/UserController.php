@@ -53,6 +53,17 @@ class UserController extends Controller
     }
 
     public function profile(User $user) {
-        return view('users.profile', ['username' => $user->username]);
+        $time = date('G');
+        $greeting = '';
+
+        if($time <= 11) {
+            $greeting = 'Good morning';
+        } else if ($time >= 12 && $time <= 16) {
+            $greeting = 'Good afternoon';
+        } else {
+            $greeting = 'Good evening';
+        }
+        
+        return view('users.profile', ['username' => $user->username, 'greeting' => $greeting]);
     }
 }

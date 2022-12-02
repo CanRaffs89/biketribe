@@ -34,6 +34,19 @@ nav {
     color: var(--mid-blue);
 }
 
+#logout-form {
+    display: inline;
+}
+
+#logout-button {
+    background: none;
+    border: none;
+    font-size: 1.4375rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
 nav ul li {
     list-style: none;
     float: left;
@@ -131,6 +144,10 @@ nav ul li a {
 
     .nav-btn i:nth-child(3) {
         margin-top: 4px;
+    }
+
+    #logout-button {
+        padding: 10px 24px;
     }
 }
 
