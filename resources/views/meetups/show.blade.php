@@ -5,7 +5,7 @@
         <div class="meetup-details-container">
             <div class="meetup-details-first">
                 <h1>{{$meetup['name']}}</h1>
-                <img class="meetup-details-image" src="" alt="">
+                <div class="meetup-details-image" style="background:url({{asset('img/' . $imgSrc)}}) no-repeat center/cover"></div>
                 <p>{{$meetup['description']}}</p>
             </div>
             <div class="meetup-details-second">
@@ -13,12 +13,13 @@
                     <img src="{{asset('img/user.png')}}" alt="" class="meetup-details-group-img">
                     <div class="meetup-details-group">
                         <h4>Hosted by</h4>
-                        <h3>{{$meetup['host']}}</h3>
+                        <h3>{{$meetup->user->username}}</h3>
                     </div>
                 </div>
                 <ul class="meetup-details-info">
                     <li>{{$meetup['location']}}</li>
-                    <li>Sat 27 Aug - 4:00PM</li> 
+                    <li>{{$meetup['date']}}</li> 
+                    <li>{{$meetup['time']}}</li> 
                 </ul>
             </div>
         </div>

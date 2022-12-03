@@ -250,13 +250,14 @@ form .search-container .search-button-container button:hover {
   justify-content: space-evenly;
 }
 .card-container .card {
-  background-color: var(--dark-blue);
+  background-color: var(--mid-blue);
   width: 30%;
   height: 400px;
   display: inline-block;
   color: var(--white);
   text-decoration: none;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 .card-container .card .inner-card {
   padding: 15px;
@@ -265,7 +266,6 @@ form .search-container .search-button-container button:hover {
   height: 200px;
   width: 100%;
   margin-bottom: 10px;
-  background-color: var(--mid-blue);
 }
 .card-container .card .inner-card .card-text {
   margin: 10px 0;
@@ -294,6 +294,7 @@ form .search-container .search-button-container button:hover {
 .meetup-details-container {
   display: flex;
   margin-top: 25px;
+  justify-content: space-between;
 }
 .meetup-details-container .meetup-details-first, .meetup-details-container .meetup-details-second {
   display: flex;
@@ -302,7 +303,6 @@ form .search-container .search-button-container button:hover {
 }
 .meetup-details-container .meetup-details-first {
   width: 65%;
-  margin-right: 5%;
 }
 .meetup-details-container .meetup-details-first h1 {
   font-weight: normal;
@@ -320,7 +320,9 @@ form .search-container .search-button-container button:hover {
 .meetup-details-container .meetup-details-second .meetup-group-card {
   display: flex;
   padding: 10px;
-  border: 1px solid var(--mid-blue);
+  border: 1px solid var(--dark-blue);
+  background: var(--mid-blue);
+  border-radius: 10px;
 }
 .meetup-details-container .meetup-details-second .meetup-group-card .meetup-details-group-img {
   height: 75px;
@@ -401,6 +403,11 @@ input {
   height: 30px;
   border: none;
   padding: 0 10px;
+  font-size: 18px;
+}
+
+textarea {
+  padding: 10px;
   font-size: 18px;
 }
 
@@ -495,6 +502,10 @@ body {
   font-weight: 400;
   font-size: 48px;
   text-align: center;
+}
+
+.h1-left {
+  text-align: left;
 }
 
 @media (max-width: 864px) {

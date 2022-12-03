@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('location');
             $table->string('date');
+            $table->string('time');
             $table->longText('description');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();

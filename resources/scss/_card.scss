@@ -7,13 +7,14 @@
     justify-content: space-evenly;
 
     .card {
-        background-color: var(--dark-blue);
+        background-color: var(--mid-blue);
         width: 30%;
         height: 400px;
         display: inline-block;
         color: var(--white);
         text-decoration: none;
         margin-bottom: 20px;
+        border-radius: 10px;
 
         .inner-card {
             padding: 15px;
@@ -22,7 +23,6 @@
                 height: 200px;
                 width: 100%;
                 margin-bottom: 10px;
-                background-color: var(--mid-blue);
             }
 
             .card-text {

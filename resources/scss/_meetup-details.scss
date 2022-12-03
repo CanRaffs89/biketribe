@@ -1,7 +1,7 @@
 .meetup-details-container {
     display: flex;
-    
     margin-top: 25px;
+    justify-content: space-between;
 
     .meetup-details-first, .meetup-details-second {
         display: flex;
@@ -11,7 +11,6 @@
 
     .meetup-details-first {
         width: 65%;
-        margin-right: 5%;
 
         h1 {
             font-weight: normal;
@@ -32,7 +31,9 @@
         .meetup-group-card {
             display: flex;
             padding: 10px;
-            border: 1px solid var(--mid-blue);
+            border: 1px solid var(--dark-blue);
+            background: var(--mid-blue);
+            border-radius: 10px;
 
             .meetup-details-group-img {
                 height: 75px;

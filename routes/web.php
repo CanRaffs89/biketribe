@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 // Meetup Routes
 Route::get('/', [MeetupController::class, 'index']);
 Route::get('/meetups/show/{meetup}', [MeetupController::class, 'show']);
+Route::get('/meetups/create', [MeetupController::class, 'create']);
+Route::post('/meetups', [MeetupController::class, 'store']);
 
 // User Routes
 Route::get('/login', [UserController::class, 'login']);
