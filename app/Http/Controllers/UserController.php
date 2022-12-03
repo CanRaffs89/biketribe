@@ -64,6 +64,6 @@ class UserController extends Controller
             $greeting = 'Good evening';
         }
         
-        return view('users.profile', ['username' => $user->username, 'greeting' => $greeting]);
+        return view('users.profile', ['username' => $user->username, 'greeting' => $greeting, 'meetups' => $user->meetups()->latest()->get()]);
     }
 }
