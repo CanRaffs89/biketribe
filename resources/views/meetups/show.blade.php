@@ -17,7 +17,7 @@
                 </div>
                 <ul class="meetup-details-info">
                     <li>{{$meetup['location']}}</li>
-                    <li>{{$meetup['date']}}</li> 
+                    <li>{{ \Carbon\Carbon::parse($meetup->date)->format('j F, Y')}}</li> 
                     <li>{{$meetup['time']}}</li> 
                 </ul>
             </div>

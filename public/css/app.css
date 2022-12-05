@@ -247,7 +247,7 @@ form .search-container .search-button-container button:hover {
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .card-container .card {
   background-color: var(--mid-blue);
@@ -457,6 +457,48 @@ textarea {
     font-size: 16px;
   }
 }
+.profile-container {
+  justify-content: flex-start;
+}
+.profile-container .profile-card {
+  background-color: var(--mid-blue);
+  width: 20%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 2.5px;
+}
+.profile-container .profile-card .profile-card-inner {
+  padding: 10px;
+}
+.profile-container .profile-card .profile-card-inner img {
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 10px auto;
+}
+.profile-container .profile-card .profile-card-inner h2, .profile-container .profile-card .profile-card-inner h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (max-width: 864px) {
+  .profile-container .profile-card {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+  }
+  .profile-container .profile-card .profile-card-inner img {
+    height: 40px;
+    width: 40px;
+  }
+  .profile-container .profile-card .profile-card-inner h2 {
+    font-size: 20px;
+  }
+}
 :root {
   font-size: 16px;
   letter-spacing: 3px;
@@ -474,6 +516,7 @@ textarea {
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
 }
 
 html {
@@ -542,6 +585,10 @@ body {
 
 .h1-left {
   text-align: left;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
 }
 
 @media (max-width: 864px) {

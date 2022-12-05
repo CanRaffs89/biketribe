@@ -14,7 +14,7 @@
     <div class="container">
         <div class="card-container">
             @foreach($meetups as $meetup)
-                <x-info-card :meetup="$meetup" />
+                <x-info-card :meetup="$meetup" :imgSrc="$imgSrc" />
             @endforeach
         </div>
     </div>
