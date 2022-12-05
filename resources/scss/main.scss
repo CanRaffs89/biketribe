@@ -13,6 +13,8 @@
     --dark-blue: #003534;
     --mid-blue: #00A3A0;
     --white: #fff;
+    --message-fail: #b22b2b;
+    --message-success: #2bb25a;
 }
 
 * {
@@ -47,6 +49,27 @@ body {
     margin: 0 50px;
 }
 
+.message-container {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 5px 0;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+
+.message-success {
+    background-color: var(--message-success);
+}
+
+.message-fail {
+    background-color: var(--message-fail);
+}
+
 .down-arrow {
     margin: 0 auto;
     height: 20px;
@@ -72,6 +95,10 @@ body {
 @media (max-width: 864px) {
     .container, .small-container {
         margin: 0 20px;
+    }
+
+    .message-container {
+        font-size: 18px;
     }
 
     .background-img {

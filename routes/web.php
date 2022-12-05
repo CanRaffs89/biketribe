@@ -23,9 +23,9 @@ Route::get('/meetups/create', [MeetupController::class, 'create']);
 Route::post('/meetups', [MeetupController::class, 'store']);
 
 // User Routes
-Route::get('/login', [UserController::class, 'login']);
-Route::post('/login', [UserController::class, 'loginUser']);
+Route::get('/login', [UserController::class, 'showLogin']);
+Route::post('/login', [UserController::class, 'login']);
 Route::post('logout', [UserController::class, 'logout'])->name('logout');
-Route::get('/register', [UserController::class, 'register']);
-Route::post('/register', [UserController::class, 'registerNewUser']);
+Route::get('/register', [UserController::class, 'showRegister']);
+Route::post('/register', [UserController::class, 'register']);
 Route::get('/profile/{user:username}', [UserController::class, 'profile']);

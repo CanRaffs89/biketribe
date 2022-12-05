@@ -1,7 +1,6 @@
 {{-- HOME - shows searchbar and latest meetups --}}
 <x-layout>
     <div class="background-img">
-        <x-navbar></x-navbar>
         <div class="container">
             <div class="search-lg-centred">
                 <h1 class="h1-lg">Find your tribe</h1>

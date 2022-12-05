@@ -7,6 +7,20 @@
         <title>BikeTribe | Cycling meetups & groups</title>
     </head>
     <body>
+        <x-navbar></x-navbar>
+        
+        @if(session()->has('success'))
+            <div class="message-container message-success">
+                {{session('success')}}
+            </div>
+        @endif
+
+        @if(session()->has('failure'))
+            <div class="message-container message-fail">
+                {{session('failure')}}
+            </div>
+        @endif
+
        {{ $slot }}
     </body>
 </html>

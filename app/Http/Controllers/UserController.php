@@ -8,20 +8,22 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function login() {
+    public function showLogin() {
         return view('users.login');
     }
 
-    public function loginUser(Request $request) {
+    public function login(Request $request) {
         $formFields = $request->validate([
-            'login-username' => 'required',
-            'login-password' => 'required'
+            'username' => 'required',
+            'password' => 'required'
         ]);
 
-        if(auth()->attempt(['username' => $formFields['login-username'], 'password' => $formFields['login-password']])) {
+        if(auth()->attempt(['username' => $formFields['username'], 'password' => $formFields['password']])) {
             $request->session()->regenerate();
             $user = auth()->user();
             return redirect('profile/' . $user->username);
+        } else {
+            return redirect('/login')->with('failure', 'Login unsuccessful');
         }
     }
 
@@ -34,11 +36,11 @@ class UserController extends Controller
         return redirect('/');
     }
 
-    public function register() {
+    public function showRegister() {
         return view('users.register');
     }
 
-    public function registerNewUser(Request $request) {
+    public function register(Request $request) {
         $formFields = $request->validate([
             'username' => ['required', 'min:2'],
             'email' => ['required', 'email'],
@@ -46,10 +48,9 @@ class UserController extends Controller
         ]);
 
         $formFields['password'] = bcrypt($formFields['password']);
-
         $user = User::create($formFields);
-
-        return $user;
+        auth()->login($user);
+        return redirect('/')->with('success', 'Registration successful - welcome to BikeTribe!');
     }
 
     public function profile(User $user) {
