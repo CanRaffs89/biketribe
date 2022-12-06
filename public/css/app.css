@@ -484,6 +484,9 @@ textarea {
   text-align: center;
   font-weight: 400;
 }
+.profile-container .profile-card .profile-card-inner span {
+  font-weight: 300;
+}
 
 @media (max-width: 864px) {
   .profile-container .profile-card {

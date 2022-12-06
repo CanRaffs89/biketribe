@@ -4,7 +4,7 @@
         <div class="meetup-details-container">
             <div class="meetup-details-first">
                 <h1>{{$meetup['name']}}</h1>
-                <div class="meetup-details-image" style="background:url({{asset('img/' . $imgSrc)}}) no-repeat center/cover"></div>
+                <div class="meetup-details-image" style="background:url({{asset('storage/' . $meetup->image)}}) no-repeat center/cover"></div>
                 <p>{{$meetup['description']}}</p>
             </div>
             <div class="meetup-details-second">

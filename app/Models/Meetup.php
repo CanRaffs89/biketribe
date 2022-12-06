@@ -9,7 +9,7 @@ class Meetup extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'location', 'date', 'time', 'description', 'user_id'];
+    protected $fillable = ['name', 'location', 'date', 'time', 'image', 'description', 'user_id'];
 
     public function scopeFilter($query, array $filters) {
         if($filters['search'] ?? false) {

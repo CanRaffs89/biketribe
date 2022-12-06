@@ -8,16 +8,14 @@ use Illuminate\Http\Request;
 class MeetupController extends Controller
 {
     public function index() {
-        $imgSrc = "angel-santos-96rlfzZ6LwY-unsplash.jpg";
         return view('index', [
-            'meetups' => Meetup::latest()->filter(request(['search']))->get(), 'imgSrc' => $imgSrc
+            'meetups' => Meetup::latest()->filter(request(['search']))->get()
         ]);
     }
 
     public function show(Meetup $meetup) {
-        $imgSrc = "angel-santos-96rlfzZ6LwY-unsplash.jpg";
         return view('meetups.show', [
-            'meetup' => $meetup, 'imgSrc' => $imgSrc
+            'meetup' => $meetup
         ]);
     }
 
@@ -31,8 +29,13 @@ class MeetupController extends Controller
             'location' => 'required',
             'date' => 'required',
             'time' => 'required',
+            'image' => 'required',
             'description' => 'required'
         ]);
+        if($request->hasFile('image')) {
+            $formFields['image'] = $request->file('image')->store('imgs', 'public');
+        }
+
         $formFields['user_id'] = auth()->id();
         Meetup::create($formFields);
         return redirect('profile/' . auth()->user()->username);

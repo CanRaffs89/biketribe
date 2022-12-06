@@ -5,12 +5,12 @@
         <form class="common-form" action="/register" method="POST" id="register-form">
             @csrf
             <label for="username">Username</label>
-            <input name="username" type="text">
+            <input name="username" type="text" value="{{old('username')}}">
             @error('username')
                 <p class="message-text message-fail">{{$message}}</p>
             @enderror
             <label for="email">Email</label>
-            <input name="email" type="text">
+            <input name="email" type="text" value="{{old('email')}}">
             @error('email')
                 <p class="message-text message-fail">{{$message}}</p>
             @enderror

@@ -13,7 +13,7 @@
             @foreach($meetups as $meetup)
                 <a class="profile-card" href="/meetups/show/{{$meetup['id']}}">
                     <div class="profile-card-inner">
-                        <h3>{{$meetup['name']}} on {{ \Carbon\Carbon::parse($meetup->date)->format('j F, Y')}}</h3>
+                        <h3>{{$meetup['name']}} <span>on</span> {{ \Carbon\Carbon::parse($meetup->date)->format('j F, Y')}}</h3>
                     </div>
                 </a>
             @endforeach
