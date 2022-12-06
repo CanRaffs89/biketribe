@@ -97,7 +97,15 @@ body {
     margin-top: 20px;
 }
 
-@media (max-width: 864px) {
+.hidden-on-desktop {
+    display: none;
+}
+
+.hidden-on-mobile {
+    display: block;
+}
+
+@media (max-width: 1200px) {
     .container, .small-container {
         margin: 0 20px;
     }
@@ -117,6 +125,15 @@ body {
 
     .h1-sm {
         font-size: 32px;
+    }
+
+    .hidden-on-desktop {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .hidden-on-mobile {
+        display: none;
     }
 }
 
