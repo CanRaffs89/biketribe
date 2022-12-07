@@ -30,7 +30,7 @@
                 <p class="message-text message-fail">{{$message}}</p>
             @enderror
             <label for="description">Description</label>
-            <textarea name="description" cols="30" rows="10" value="{{old('description')}}"></textarea>
+            <textarea name="description" rows="10">{{old('description')}}</textarea>
             @error('description')
                 <p class="message-text message-fail">{{$message}}</p>
             @enderror
