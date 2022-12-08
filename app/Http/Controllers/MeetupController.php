@@ -63,6 +63,15 @@ class MeetupController extends Controller
         $meetup->update($formFields);
         return redirect('profile/' . auth()->user()->username)->with('success', 'Meetup updated');
     }
+
+    public function delete (Meetup $meetup) {
+        if($meetup->user_id != auth()->id()){
+            abort(403, 'You do not have permission to do that');
+        } else {
+            $meetup->delete();
+        }
+        return redirect('profile/' . auth()->user()->username)->with('success', 'Meetup deleted');
+    }
 }
 
 // Common routes

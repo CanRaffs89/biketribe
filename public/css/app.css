@@ -483,9 +483,14 @@ textarea {
   justify-content: space-evenly;
   margin-top: 30px;
 }
-.profile-container .profile-card .profile-card-inner .profile-card-icon-container .profile-card-icon {
+.profile-container .profile-card .profile-card-inner .profile-card-icon-container .profile-card-icon, .profile-container .profile-card .profile-card-inner .profile-card-icon-container .delete-meetup-form {
   height: 30px;
   width: 30px;
+}
+.profile-container .profile-card .profile-card-inner .profile-card-icon-container .delete-meetup-form #delete-icon {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .profile-container .profile-card .profile-card-inner img {
   display: block;
