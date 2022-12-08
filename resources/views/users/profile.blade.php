@@ -21,9 +21,6 @@
                         <a id="edit-icon" class="profile-card-icon" href="/meetups/edit/{{$meetup['id']}}">
                             <img class="profile-card-icon" src="{{asset('img/pen-solid.svg')}}" alt="">
                         </a>
-                        {{-- <a id="delete-icon" class="profile-card-icon" href="/meetups/{{$meetup['id']}}">
-                            <img class="profile-card-icon" src="{{asset('img/trash-can-solid.svg')}}" alt="">
-                        </a> --}}
                         <form action="/meetups/{{$meetup['id']}}" class="delete-meetup-form" method="POST">
                             @csrf
                             @method('DELETE')
