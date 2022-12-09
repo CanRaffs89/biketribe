@@ -72,10 +72,22 @@ body {
 }
 
 .down-arrow {
-    margin: 0 auto;
-    height: 20px;
-    width: 20px;
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
     transform: rotate(90deg);
+    text-decoration: none;
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+#search-message {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .h1-lg {

@@ -1,16 +1,4 @@
-{{-- HOME - shows searchbar and latest meetups --}}
 <x-layout>
-    <div class="background-img">
-        <div class="container">
-            <div class="search-lg-centred">
-                <h1 class="h1-lg">Find your tribe</h1>
-                <x-searchbar></x-searchbar>
-                <a class="down-arrow" href="#card-container">
-                    <img src="{{asset('img/arrow_icon.svg')}}" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="container">
         @if (count($meetups) == 0)
             <h2 id="search-message">No meetups found</h2>

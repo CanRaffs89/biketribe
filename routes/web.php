@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\MeetupController;
 use App\Http\Controllers\UserController;
-use App\Models\Meetup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +23,7 @@ Route::post('/meetups', [MeetupController::class, 'store']);
 Route::get('/meetups/edit/{meetup}', [MeetupController::class, 'edit']);
 Route::put('/meetups/{meetup}', [MeetupController::class, 'update']);
 Route::delete('/meetups/{meetup}', [MeetupController::class, 'delete']);
+Route::get('/search', [MeetupController::class, 'search']);
 
 // User Routes
 Route::get('/login', [UserController::class, 'showLogin']);

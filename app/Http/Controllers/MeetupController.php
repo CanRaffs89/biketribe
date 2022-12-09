@@ -9,8 +9,15 @@ class MeetupController extends Controller
 {
     public function index() {
         return view('index', [
-            'meetups' => Meetup::latest()->filter(request(['search']))->get()
+            // 'meetups' => Meetup::latest()->filter(request(['search']))->get()
+            'meetups' => Meetup::latest()->get()
         ]);
+    }
+
+    public function search(Request $request) {
+        $meetups = $request->validate(['search' => 'required']);
+        $meetups = Meetup::search($request->search)->get();
+        return view('meetups.search', ['meetups' => $meetups]);
     }
 
     public function show(Meetup $meetup) {
