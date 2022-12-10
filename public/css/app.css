@@ -573,7 +573,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   margin: 0 150px;
 }
 
@@ -648,6 +648,11 @@ body {
   display: block;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
 @media (max-width: 1200px) {
   .container, .small-container {
     margin: 0 20px;
@@ -680,3 +685,4 @@ body {
   }
 }
 
+/*# sourceMappingURL=app.css.map */

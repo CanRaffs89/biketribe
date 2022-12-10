@@ -8,6 +8,7 @@
         <title>BikeTribe | Cycling meetups & groups</title>
     </head>
     <body>
+
         <x-navbar></x-navbar>
         
         @if(session()->has('success'))
@@ -27,6 +28,10 @@
                 {{session('failure')}}
             </div>
         @endif
+
        {{ $slot }}
+        
+        <footer>Copyright &copy; BikeTribe {{date('Y')}}</footer>
+
     </body>
 </html>
