@@ -569,7 +569,7 @@ body {
 
 .background-img {
   background: url("/img/bike-background.svg") no-repeat fixed right/contain;
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 
 .container {
@@ -578,7 +578,7 @@ body {
 }
 
 .small-container {
-  height: calc(100vh - 125px);
+  height: 100vh;
   margin: 0 50px;
 }
 
@@ -650,7 +650,7 @@ body {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 1200px) {
