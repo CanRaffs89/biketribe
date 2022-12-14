@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="home-container">
         @if (count($meetups) == 0)
             <h2 id="search-message">No meetups found</h2>
         @endif

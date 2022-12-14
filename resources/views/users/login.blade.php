@@ -16,5 +16,6 @@
             @enderror
             <button class="form-submit-button" type="submit">Login</button>
         </form>
+        <a class="form-link" href="/register">Don't have an account? <span>Register</span></a>
     </div>
 </x-layout>

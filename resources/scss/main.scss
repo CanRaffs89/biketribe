@@ -40,8 +40,13 @@ body {
     height: calc(100vh - 100px);
 }
 
-.container {
+.home-container {
     height: 100%;
+    margin: 0 150px;
+}
+
+.container {
+    height: calc(100vh - 150px);
     margin: 0 150px;
 }
 
@@ -123,7 +128,7 @@ footer {
 }
 
 @media (max-width: 1200px) {
-    .container, .small-container {
+    .home-container, .container, .small-container {
         margin: 0 20px;
     }
 
