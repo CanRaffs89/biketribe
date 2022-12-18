@@ -12,6 +12,19 @@ class UserController extends Controller
         return view('users.login');
     }
 
+    public function loginAPI(Request $request) {
+        $loginFields = $request->validate([
+            'username' => 'required',
+            'password' => 'required'
+        ]);
+        if(auth()->attempt($loginFields)) {
+            $user = User::where('username', $loginFields['username'])->first();
+            $token = $user->createToken('logintoken')->plainTextToken;
+            return $token;
+        }
+        return '';
+    }
+
     public function login(Request $request) {
         $formFields = $request->validate([
             'username' => 'required',

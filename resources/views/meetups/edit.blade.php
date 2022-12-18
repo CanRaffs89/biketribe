@@ -1,6 +1,6 @@
 {{-- EDIT - form for editing an existing meetup --}}
 <x-layout>
-    <div class="container">
+    <div class="form-container">
         <h1 class="h1-sm">Edit a Meetup</h1>
         <form class="common-form" action="/meetups/{{$meetup->id}}" method="POST" enctype="multipart/form-data">
             @csrf

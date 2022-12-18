@@ -1,6 +1,6 @@
 {{-- CREATE - form for adding a new meetup --}}
 <x-layout>
-    <div class="container">
+    <div class="form-container">
         <h1 class="h1-sm">Add a New Meetup</h1>
         <form class="common-form" action="/meetups" method="POST" enctype="multipart/form-data">
             @csrf

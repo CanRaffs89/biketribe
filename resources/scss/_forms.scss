@@ -1,3 +1,7 @@
+.form-container {
+    margin: 0 150px;
+}
+
 .common-form {
     display: flex;
     flex-direction: column;
@@ -56,6 +60,10 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+    .form-container {
+        margin: 0 20px 40px 20px;
+    }
+
     .common-form {
         width: 100%;
     }

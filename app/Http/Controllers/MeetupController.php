@@ -9,7 +9,6 @@ class MeetupController extends Controller
 {
     public function index() {
         return view('index', [
-            // 'meetups' => Meetup::latest()->filter(request(['search']))->get()
             'meetups' => Meetup::latest()->get()
         ]);
     }
@@ -48,6 +47,24 @@ class MeetupController extends Controller
         return redirect('profile/' . auth()->user()->username);
     }
 
+    public function storeAPI(Request $request) {
+        $formFields = $request->validate([
+            'name' => 'required',
+            'location' => 'required',
+            'date' => 'required',
+            'time' => 'required',
+            'image' => 'required',
+            'description' => 'required'
+        ]);
+        if($request->hasFile('image')) {
+            $formFields['image'] = $request->file('image')->store('imgs', 'public');
+        }
+
+        $formFields['user_id'] = auth()->id();
+        $newMeetup = Meetup::create($formFields);
+        return $newMeetup->id;
+    }
+
     public function edit(Meetup $meetup) {
         return view('meetups.edit', ['meetup' => $meetup]);
     }
@@ -72,12 +89,13 @@ class MeetupController extends Controller
     }
 
     public function delete (Meetup $meetup) {
-        if($meetup->user_id != auth()->id()){
-            abort(403, 'You do not have permission to do that');
-        } else {
-            $meetup->delete();
-        }
+        $meetup->delete();
         return redirect('profile/' . auth()->user()->username)->with('success', 'Meetup deleted');
+    }
+
+    public function deleteAPI (Meetup $meetup) {
+        $meetup->delete();
+        return 'true';
     }
 }
 
