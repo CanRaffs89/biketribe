@@ -1,6 +1,6 @@
 {{-- REGISTER --}}
 <x-layout>
-    <div class="container">
+    <div class="user-form-container">
         <h1 class="h1-sm">Register</h1>
         <form class="common-form" action="/register" method="POST" id="register-form">
             @csrf

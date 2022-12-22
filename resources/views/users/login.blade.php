@@ -1,6 +1,6 @@
 {{-- LOGIN --}}
 <x-layout>
-    <div class="container">
+    <div class="user-form-container">
         <h1 class="h1-sm">Login</h1>
         <form class="common-form" action="/login" method="POST" id="login-form">
             @csrf

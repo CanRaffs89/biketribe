@@ -190,8 +190,11 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 500px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
 }
 
 form {
@@ -385,6 +388,12 @@ form .search-container .search-button-container button:hover {
 }
 .form-container {
   margin: 0 150px;
+  height: 100%;
+}
+
+.user-form-container {
+  margin: 0 150px;
+  height: 100vh;
 }
 
 .common-form {
@@ -444,7 +453,7 @@ textarea {
 }
 
 @media (max-width: 1200px) {
-  .form-container {
+  .form-container, .user-form-container {
     margin: 0 20px 40px 20px;
   }
 
@@ -599,6 +608,7 @@ body {
 .container {
   height: calc(100vh - 150px);
   margin: 0 150px;
+  position: relative;
 }
 
 .small-container {
@@ -682,8 +692,13 @@ footer {
     margin: 0 20px;
   }
 
+  .small-container {
+    height: 100%;
+  }
+
   .container {
     margin: 0 20px 40px 20px;
+    height: 100%;
   }
 
   .message-container {
