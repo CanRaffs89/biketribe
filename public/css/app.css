@@ -627,6 +627,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
+  z-index: 5;
 }
 
 .message-success {
@@ -708,6 +709,7 @@ footer {
   .background-img {
     background-position: center;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   .h1-lg {
