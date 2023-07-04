@@ -18,10 +18,9 @@ class MeetupFactory extends Factory
     {
         return [
             'name' => $this->faker->sentence(),
-            'tags' => 'fixed, beginner, london',
-            'host' => $this->faker->company(),
             'location' => $this->faker->city(),
             'date' => $this->faker->dayOfWeek(),
+            'time' => $this->faker->time(),
             'description' => $this->faker->paragraph()
         ];
     }
