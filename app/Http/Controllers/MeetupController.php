@@ -99,11 +99,4 @@ class MeetupController extends Controller
     }
 }
 
-// Common routes
-// index - show all
-// show - show single
-// create - show form to create new
-// store - store new
-// edit - show form to edit
-// update - update
-// destroy - delete
+
